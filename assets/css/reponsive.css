@@ -1,3 +1,8 @@
+@media (max-width: 741px){
+    .header_btn .search-icon{
+        display: none;
+    }
+}
 @media (min-width: 1024px){
     .header_btn .menu-btn{
         display: none;
@@ -7,6 +12,7 @@
     #header .header_navbar .header_navbar-item {
         padding: 30px 10px;
         text-transform: capitalize;
+        font-size: 18px;
     }
 }
 /*--------------- Talet and mobile------------------ */

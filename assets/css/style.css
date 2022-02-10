@@ -32,17 +32,17 @@ body{
     display: flex;
     list-style-type: none;
 }
-#header .header_navbar .header_navbar-item {
+.header_navbar .header_navbar-item {
     padding: 30px 14px;
     text-transform: uppercase;
 }
-#header .header_navbar .header_navbar-item a{
+.header_navbar .header_navbar-item a{
     text-decoration: none;
     color: #333;
     transition: 0.25s;
 
 }
-#header .header_navbar .header_navbar-item:hover a{
+.header_navbar .header_navbar-item:hover a{
     color: var(--base-color);
 }
 #header .header_btn{
@@ -51,7 +51,7 @@ body{
 }
 #header .header_btn .search-icon,
 #header .header_btn .menu-btn{
-    padding: 16px;
+    padding: 16px 18px;
     border: solid 1px #ccc;
     border-radius: 50%;
     cursor: pointer;
