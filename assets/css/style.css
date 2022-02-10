@@ -1,4 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+:root{
+    --base-color: #f5871f;
+}
 *{
     margin: 0;
     padding: 0;
@@ -6,4 +10,53 @@
 }
 html {
     font-family: 'Arvo', serif;
+    font-size: 16px;
+    height: 1000px;
 }
+body{
+    background-color: #333;
+}
+
+#header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 90px;
+    background-color: #fff;
+}
+
+#header .header-logo{
+
+}
+#header .header_navbar{
+    display: flex;
+    list-style-type: none;
+}
+#header .header_navbar .header_navbar-item {
+    padding: 30px 14px;
+    text-transform: uppercase;
+}
+#header .header_navbar .header_navbar-item a{
+    text-decoration: none;
+    color: #333;
+    transition: 0.25s;
+
+}
+#header .header_navbar .header_navbar-item:hover a{
+    color: var(--base-color);
+}
+#header .header_btn{
+    display: flex;
+    align-items: center;
+}
+#header .header_btn .search-icon,
+#header .header_btn .menu-btn{
+    padding: 16px;
+    border: solid 1px #ccc;
+    border-radius: 50%;
+    cursor: pointer;
+}
+#header .header_btn .menu-btn{
+    
+}
+

@@ -1,0 +1,40 @@
+@media (min-width: 1024px){
+    .header_btn .menu-btn{
+        display: none;
+    }
+}
+@media (min-width: 1024px) and (max-width: 1240px) {
+    #header .header_navbar .header_navbar-item {
+        padding: 30px 10px;
+        text-transform: capitalize;
+    }
+}
+/*--------------- Talet and mobile------------------ */
+@media (max-width: 1023px) {
+    #header{
+        justify-content: space-between;
+    }
+    #header .header-logo{
+        margin-left: 5%;
+    }
+    #header .header_navbar{
+        display: none;
+    }
+    .header_btn{
+        margin-right: 3%;
+    }
+}
+/* --------------Talet--------------------- */
+@media (min-width: 740px) and (max-width: 1023px) {
+    #header .header-logo{
+        
+    }
+    #header .header_btn .menu-btn{
+        margin-left: 14px;
+    }
+}
+
+/* --------------Mobile--------------------- */
+@media (min-width: 740px){
+
+}
