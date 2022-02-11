@@ -10,9 +10,7 @@
 }
 @media (min-width: 1024px) and (max-width: 1240px) {
     #header .header_navbar .header_navbar-item {
-        padding: 30px 10px;
         text-transform: capitalize;
-        font-size: 18px;
     }
 }
 /*--------------- Talet and mobile------------------ */
@@ -26,8 +24,11 @@
     #header .header_navbar{
         display: none;
     }
-    .header_btn{
-        margin-right: 3%;
+    .search-icon{
+        margin-right: 90px;
+    }
+    .menu-btn{
+        display: block;
     }
 }
 /* --------------Talet--------------------- */
@@ -38,9 +39,19 @@
     #header .header_btn .menu-btn{
         margin-left: 14px;
     }
+    .header_navbar .header_navbar-item a{
+        
+        padding: 24px 14px;
+    }
+    .menu_mobile{
+        width: 40%;
+
+    }
 }
 
 /* --------------Mobile--------------------- */
-@media (min-width: 740px){
-
+@media (max-width: 740px){
+    .header_navbar .header_navbar-item a{
+        padding: 14px 15px;
+    }
 }

@@ -15,9 +15,12 @@ html {
 }
 body{
     background-color: #333;
+    transition: all 0.4s;
+
 }
 
 #header {
+    position: relative;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -25,22 +28,22 @@ body{
     background-color: #fff;
 }
 
-#header .header-logo{
-
+#header .header-logo img{
+    width: 130px;
 }
 #header .header_navbar{
     display: flex;
     list-style-type: none;
 }
 .header_navbar .header_navbar-item {
-    padding: 30px 14px;
     text-transform: uppercase;
 }
 .header_navbar .header_navbar-item a{
     text-decoration: none;
     color: #333;
     transition: 0.25s;
-
+    display: block;
+    padding: 30px 14px;
 }
 .header_navbar .header_navbar-item:hover a{
     color: var(--base-color);
@@ -49,14 +52,87 @@ body{
     display: flex;
     align-items: center;
 }
-#header .header_btn .search-icon,
-#header .header_btn .menu-btn{
+#header .search-icon,
+.menu-btn{
     padding: 16px 18px;
     border: solid 1px #ccc;
     border-radius: 50%;
     cursor: pointer;
 }
-#header .header_btn .menu-btn{
-    
+.menu-btn{
+    display: none;
+    position: absolute;
+    top: 18px;
+    right: 25px;
+}
+.nav_input{
+    display: none;
 }
 
+/* Overlay */
+.header_overlay{
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+    display: none;
+    animation: fadeIn linear 0.2s;
+}
+/* ----------------Menu mobile and Talet--------------- */
+.menu_mobile{
+    transform: translateX(-100%);
+    opacity: 0;
+    transition: all linear 0.2s ;
+    background-color: #fff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    height: 100vh;
+    min-width: 300px;
+    z-index: 2;
+}
+.menu_mobile .header-logo {
+    height: 90px;
+    
+}
+.menu_mobile .header-logo img {
+    margin-left: 10px;
+    margin-top: 10px;
+    width: 130px;
+}
+.menu_mobile .header-logo .menu_mobile-close {
+    cursor: pointer;
+    float: right;
+    font-size: 28px;
+    padding: 0 20px;
+    line-height: 90px;
+    margin-right: 10px;
+}
+.menu_mobile .header_navbar{
+    margin-top: 20px;
+}
+
+.menu_mobile .header_navbar .header_navbar-item{
+    text-transform: capitalize;
+    font-size: 14px;
+}
+.nav_input:checked ~ .header_overlay{
+    display: block;
+}
+.nav_input:checked ~ .menu_mobile{
+    transform: translateX(0);
+    opacity: 1;
+}
+
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
