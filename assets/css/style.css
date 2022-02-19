@@ -2,6 +2,7 @@
 
 :root{
     --base-color: #f5871f;
+    --backgrount-color: #686A6F;
 }
 *{
     margin: 0;
@@ -135,4 +136,52 @@ body{
     to {
         opacity: 1;
     }
+}
+
+
+/* css slider */
+.slider{
+    background-color: var(--backgrount-color);
+    text-align: left;
+    padding: 250px 0 200px;
+}
+.slider_content{
+    padding-left: 120px;
+}
+.slider_content-title{
+    font-size: 70px;
+    font-weight: 600;
+    text-transform: capitalize;
+    color: var(--base-color);
+    padding-bottom: 15px;
+    line-height: 1.2;
+}
+.slider-text{
+    padding-bottom: 30px;
+    color: #333;
+    line-height: 2;
+}
+.slider-email{
+}
+.input-email{
+    padding: 24px;
+    width: 70%;
+}
+.submit-btn{
+    text-transform: uppercase;
+    font-weight: 700;
+    padding: 23px 30px;
+    font-size: large;
+    color: #fff;
+    background-color: var(--base-color);
+    border: none;
+    clip-path: polygon(8px 0%, 100% 0%, calc(100% - 8px) 100%, 0% 100%);
+    margin-left: 18px;
+    cursor: pointer;
+}
+.slider_content-img{
+
+}
+.slider_content-img img{
+    align-items: center;
 }
