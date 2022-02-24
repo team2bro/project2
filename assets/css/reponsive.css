@@ -33,9 +33,7 @@
 }
 /* --------------Talet--------------------- */
 @media (min-width: 740px) and (max-width: 1023px) {
-    #header .header-logo{
-        
-    }
+    
     #header .header_btn .menu-btn{
         margin-left: 14px;
     }

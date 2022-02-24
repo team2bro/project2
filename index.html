@@ -5,14 +5,19 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="./assets/css/style.css">
+    <link
+        rel="stylesheet"
+        type="text/css"
+        href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+      />
     <link rel="stylesheet" href="./assets/css/grid.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="stylesheet" href="./assets/css/reponsive.css">
     <title>Food And Drink</title>
 </head>
 <body>
     <!-- Header start -->
-    <div id="header">
+    <div id="header" class="pst-fixed">
         <div class="header-logo">
             <a href=""><img src="./assets/img/logo.png" alt="logo"></a>
         </div>
@@ -55,14 +60,63 @@
     </div>
     <!-- Header end -->
 
-
     <!-- Slide Start -->
-
+    <div class="circle"></div>
+    <div class="triangle"></div>
+    <div class="slider">
+        <div class="row slider-items">
+            <div class="slider_content span-1-of-2 col">
+                <h1 class="slider_content-title">star to enjoy unique food</h1>
+                <p class="slider-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolore accusantium expedita ipsum quidem nam iste ratione.</p>
+                <div class="slider-email">
+                    <input placeholder="Enter your email" type="email" class="input-email">
+                    <button class="submit-btn">submit</button>
+                </div>
+            </div>
+            <div class="slider_content-img span-1-of-2 col">
+                <img src="./assets/img/slideimg1.png" alt="">
+            </div>
+    
+        </div>
+        <div class="row slider-items">
+            <div class="slider_content span-1-of-2 col">
+                <h1 class="slider_content-title">good food drinks & great taste</h1>
+                <p class="slider-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolore accusantium expedita ipsum quidem nam iste ratione.</p>
+                <div class="slider-email">
+                    <input placeholder="Enter your email" type="email" class="input-email">
+                    <button class="submit-btn">submit</button>
+                </div>
+            </div>
+            <div class="slider_content-img span-1-of-2 col">
+                <img src="./assets/img/slideimg2.png" alt="">
+            </div>
+    
+        </div>
+    </div>
     <!-- Slide end -->
 
 
     <!-- About start  -->
-
+    <section id="about_section">
+        <img src="./assets/img/about-img1.jpg" alt="" class="about_img">
+        <div class="about_content">
+            <div class="about_content-box">
+                <span class="sub-title">Feedback</span>
+                <h3 class="about-title">We Make The Best Food In Your Town</h3>
+                <p>It is a long established fact that a reader will be distracted by the readable content of a page Lorem ipsum dolor sit amet consectetur, adipisicing elit.Lorem ipsum dolor sit amet consectetur</p>
+                <div class="about-recomment">
+                    <div class="customer-img">
+                        <img src="./assets/img/customer.jpg" alt="">
+                    </div>
+                    <div class="customer-comment">
+                        <p>A Catering companies if you are looking for good food, friendly staff and fair prices.</p>
+                        <span class="costomer-name">-Rosalina D.</span>
+                        <div class="mes-icon"><i class="fa-regular fa-comments"></i></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
     <!-- About end  -->
 
 
@@ -105,6 +159,20 @@
     <!-- Contact start -->
     
     <!-- Contact end -->
+
+<!--------------- LINK SLICK SLIDER------------------>
+    <script
+    type="text/javascript"
+    src="https://code.jquery.com/jquery-1.11.0.min.js"
+    ></script>
+    <script
+    type="text/javascript"
+    src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"
+    ></script>
+    <script
+    type="text/javascript"
+    src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script>
 </body>
 <script src="./assets/js/main.js"></script>
 </html>
