@@ -63,6 +63,7 @@ body{
     border: solid 1px #ccc;
     border-radius: 50%;
     cursor: pointer;
+    z-index: 10;
 }
 .menu-btn{
     display: none;
@@ -97,7 +98,7 @@ body{
     bottom: 0;
     height: 100vh;
     min-width: 300px;
-    z-index: 2;
+    z-index: 10;
 }
 .menu_mobile .header-logo {
     height: 90px;
