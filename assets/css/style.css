@@ -13,11 +13,11 @@
 html {
     font-family: 'Arvo', serif;
     font-size: 16px;
-    height: 1000px;
 }
 body{
     background-color: var(--backgrount-color);
     transition: all linear 0.4s;
+    width: 100%;
 
 }
 .pst-fixed{
@@ -336,7 +336,7 @@ body{
     top: 50%;
     left: 30px;
     transform: translateY(-50%);
-    transform: translateX(-50px);
+    transform: translateX(-30px);
     background-color: var(--base-color);
     color: #fff;
     border: none;
@@ -353,7 +353,7 @@ body{
     top: 50%;
     right: 30px;
     transform: translateY(-50%);
-    transform: translateX(50px);
+    transform: translateX(30px);
     background-color: var(--base-color);
     color: #fff;
     border: none;
@@ -414,22 +414,22 @@ body{
 
 #about_section{
     background-color: var(--backgrount-color);
+    position: relative;
 }
-.about_img{
+
+.about_img-item{
     width: 668px;
     height: 684px;
     position: absolute;
 }
 .about_content{
-    width: 100%;
     padding: 0 100px;
     transform: translateY(100px);
 }
 
 .about_content-box {
-    display: flex;
-    flex-direction: column;
-    max-width: 640px;
+    width: 640px;
+    display: inline-block;
     transform: translateX(700px);
 }
 
