@@ -4,6 +4,8 @@
     --base-color: #f5871f;
     --backgrount-color: #353530;
     --base-hover: #bf5906;
+    --text-color: #555459;
+    --border-food-menu: #e1e1e1;
 }
 *{
     margin: 0;
@@ -13,6 +15,7 @@
 html {
     font-family: 'Arvo', serif;
     font-size: 16px;
+    scroll-behavior: smooth;
 }
 body{
     background-color: var(--backgrount-color);
@@ -67,7 +70,7 @@ body{
 }
 .menu-btn{
     display: none;
-    position: absolute;
+    position: fixed;
     top: 18px;
     right: 25px;
 }
@@ -301,14 +304,14 @@ body{
 }
 .input-email{
     outline: 0;
-    padding: 24px;
+    padding: 20px;
     width: 70%;
 }
 .submit-btn{
     text-transform: uppercase;
     font-weight: 700;
-    padding: 23px 40px;
-    font-size: large;
+    padding: 20px 40px;
+    font-size: 16px;
     color: #fff;
     background-color: var(--base-color);
     border: none;
@@ -415,23 +418,24 @@ body{
 
 #about_section{
     background-color: var(--backgrount-color);
-    position: relative;
+    display: flex;
 }
-
+.about_img{
+    display: inline-block;
+    background-color: #fff;
+}
 .about_img-item{
     width: 668px;
     height: 684px;
-    position: absolute;
 }
 .about_content{
-    padding: 0 100px;
-    transform: translateY(100px);
+    padding-left: 120px;
 }
 
 .about_content-box {
-    width: 640px;
+    max-width: 640px;
     display: inline-block;
-    transform: translateX(700px);
+    margin-top: 100px;
 }
 
 .sub-title, .about-title, .about_content-box p {
@@ -466,7 +470,7 @@ body{
     margin-left: 40px;
 }
 .about-recomment .customer-comment p{
-    color: #555459;
+    color: var(--text-color);
     font-size: 18px;
 }
 .about-recomment .customer-comment .costomer-name{
@@ -479,6 +483,131 @@ body{
     position: absolute;
     font-size: 70px;
     opacity: 0.1;
-    right: 20px;
-    bottom: 20px;
+    transform: translate(380px, -95px);
+}
+
+
+
+/* MENU SECTION */
+#menu{
+    padding-top: 150px;
+    background-color: #fff;
+}
+.section-title{
+    text-align: center;
+    padding-bottom: 50px;
+}
+.title{
+    font-size: 58px;
+    margin-bottom: 20px;
+}
+.title span:first-child {
+    color: var(--base-color);
+}
+.title span:nth-child(2){
+    color: var(--text-color);
+}
+.section-title p{
+    display: inline-block;
+    max-width: 640px;
+    color: var(--text-color);
+    line-height: 1.8;
+    margin: 0 auto;
+}
+
+.container {
+	margin: 0 auto;
+    margin-bottom: auto;
+	text-align: center;
+}
+
+.food-menu {
+	margin-bottom: 40px;
+}
+
+.food-menu .food_menu-btn {
+    border: 0.5px solid var(--border-food-menu);
+    border-radius: 10px;
+	color: var(--text-color);
+	padding: 50px 70px;
+	transition: 0.25s;
+	cursor: pointer;
+	background-color: #fff;
+	margin: 15px;
+    display: inline-block;
+}
+.active{
+    color: #fff;
+    background-color: var(--base-color);
+}
+.food-menu .food_menu-btn:hover,
+.food-menu .food_menu-btn.active {
+	color: #fff;
+	background-color: var(--base-color);
+}
+.food_menu-btn span i{
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+
+.food-list {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-wrap: wrap;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.food-item {
+	width: calc(50% - 30px);
+	height: 210px;
+	margin: 15px;
+	border-radius: 10px;
+	overflow: hidden;
+    display: flex;
+    align-items: center;
+    border: 2px dashed var(--border-food-menu) ;
+    transition: 0.3s;
+}
+.food-item:hover {
+    background-color: #f8f8f8;
+    border-color: #f8f8f8;
+}
+.food_img{
+    display: inline-block;
+    overflow: hidden;
+    margin-left: 40px;
+    margin-right: 20px;
+    border-radius: 50%;
+}
+.food_img img{
+    transition: all 0.3s;
+    border-radius: 50%;
+
+}
+.food_img img:hover{
+    transform: scale(1.1);
+}
+
+.food_price {
+    text-align: start;
+    color: var(--text-color);
+}
+.food_title{
+    margin-bottom: 12px;
+    font-size: 24px;
+}
+.food_text{
+    margin-bottom: 12px;
+
+}
+.food_cost{
+    color: var(--base-color);
+    font-weight: 700;
+    font-size: 20px;
+    opacity: 0.9;
+}
+.hide {
+	display: none;
 }
