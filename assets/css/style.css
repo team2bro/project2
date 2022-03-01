@@ -668,6 +668,7 @@ body{
 }
 .services_content-text{
     line-height: 2;
+    max-width: 460px;
 }
 .services_btn-link{
     padding-top: 10px;
