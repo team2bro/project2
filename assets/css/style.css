@@ -798,3 +798,438 @@ body{
     color: var(--text-color);
 }
 
+
+
+/*-------------------GALLAERY--------------------------- */
+#gallary{
+    background-color: #fff;
+    padding: 150px 0 65px;
+
+}
+.gallary-a{
+    text-align: center;
+}
+.gallary-a .gallary-title{
+    font-weight: 700;
+    font-size: 58px;
+    position: relative;
+    display: block;
+    margin-bottom: 20px;
+}
+.gallary-title span:first-child{
+    color: var(--text-color);
+}
+.gallary_title-text{
+    color: var(--text-color);
+    margin: 0 auto;
+    max-width: 640px;
+    line-height: 1.8;
+    display: inline-block;
+}
+.gallary_content{
+    padding-top: 50px;
+    width: 80%;
+    margin: 0 auto;
+}
+/* h5{
+    font-size: 25px;
+    text-align: center;
+}
+p{
+    margin: 20px;
+} */
+
+.gallary-a-color{
+    color: var(--base-color);
+
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.gallary_content-item {
+    display: flex;
+}
+
+.gallary-img{
+    position: relative;
+    overflow: hidden;
+}
+.gallary_img-item {
+    width: 636px;
+    transition: all 0.5s;
+    transition-delay: 0.1s;
+}
+.gallary_img-item:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+}
+.gallary-border{
+    position: absolute;
+    transform: translate(40px, 40px);
+    z-index: 10;
+}
+.gallary-border span{
+    padding: 8px 10px;
+    background-color: #fff;
+    width: 100px;
+    color: var(--text-color);
+    
+}
+
+.row2 .gallary-img:last-child{
+    margin-top: 31px;
+}
+/*---------------end gallary------------*/
+
+/*---------Future start---------*/
+#future {
+    padding-top: 85px;
+    background-color: #fff;
+}
+.feature_evaluate{
+    border-bottom: 1px solid var(--border-food-menu);
+    margin: 0 120px;
+}
+.mb4{
+    margin-bottom: 1.5rem !important;
+    line-height: 1.8;
+    color: var(--text-color);
+}
+h5.title-future{
+    width: 100%;
+    font-size: 58px;
+    margin-bottom: 30px;
+}
+.title-future span:first-child,
+.title-future span:last-child{
+    color: var(--text-color);
+}
+.title-future span:nth-child(2){
+    color: var(--base-color);
+}
+.title-future-1{
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+.title-future-span{
+    float: right;
+}
+.title-future-1-h{
+    font-size: 20px;
+    color: var(--text-color);
+}
+.fulture_span {
+    color: #f5871f;
+}
+.block-learn{
+    font-family: sans-serif;
+    display: inline-block;
+    padding: 15px 18px;
+    background-color: #f5871f;
+    clip-path: polygon(8px 0%, 100% 0%, calc(100% - 8px) 100%,0% 100% );
+    cursor: pointer;
+    color: #fff;
+    transition: all 0.3s;
+}
+.block-learn:hover{
+    background-color: var(--base-hover);
+
+}
+.block-learn span{
+    padding-right: 10px;
+}
+
+.col-lg-6-1{
+    width: 50%;
+}
+.progress{
+    background-color: #f5871f;
+    height: 5px;
+    border-radius: 0;
+    display: flex;
+    width: 84%;
+    animation-duration: 4s;
+    animation-name: example;
+}
+.progress1{
+    background-color: #f5871f;
+    height: 5px;
+    border-radius: 0;
+    display: flex;
+    width: 60%;
+    animation-duration: 2s;
+    animation-name: example1;
+}
+.title_block {
+
+}
+  
+@keyframes example{
+    from {width: 0;}
+    to {width: 84%;}
+}
+  
+@keyframes example1{
+    from {width: 0;}
+    to {width: 60%;}
+}
+
+/* ------ADDRESS---------------- */
+.border-address{
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    line-height: 1.8;
+}
+.border_address-item {
+    width: 100%;
+    height: 100%;
+    border: 1px solid var(--border-food-menu);
+    border-radius: 25px;
+    transition: all 0.6s;
+    padding: 30px 20px;
+    margin: 20px 20px;
+    display: flex;
+    flex-direction: column;
+}
+.border_address-item:hover{
+    background-color: var(--text-color);   
+}
+.border_address-item:hover .border-email i{
+    background-color: var(--base-color);
+    color: #fff;
+}
+.border_address-item:hover .email_address-title,
+.border_address-item:hover .border-email-2{
+    color: #fff;
+}
+.border_address-item:hover .border-email-icon i{
+    background-color: var(--base-color);
+}
+.address_title{
+    display: flex;
+}
+.border-email{
+    margin-left: 20px;
+}
+.border-email i{
+    font-size: 16px;
+    padding: 20px;
+    border-radius: 50%;
+    color: var(--base-color);
+    transition: all 0.6s;
+}
+
+.email_address-title{
+    text-align: left;
+    margin: auto 0;
+    color: var(--text-color);
+    margin-left: 20px;
+    transition: all 0.6s;
+
+}
+
+.address_text{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+    margin-left: 20px;
+    
+}
+.border-email-2{
+    text-align: left;
+    transition: all 0.6s;
+    color: var(--text-color);
+}
+.border-email-icon{
+    margin: auto 0;
+    margin-right: 15px;
+}
+.border-email-icon i{
+    padding: 10px;
+    background-color: var(--text-color);
+    color: #fff;
+    border-radius: 50%;
+    transition: all 0.6s;
+
+}
+.border-email-1 {
+    font-size: 20px;
+}
+
+@media only screen and (max-width: 800px) and (min-width:0){
+    .border-address{
+        display: block;
+    }
+  }
+.menu_background{
+    float: right;
+    position: absolute;
+    right: 0;
+    background-position: center;
+    background-size: cover;
+    z-index: -1;
+
+}
+.menu_head{
+    text-align: center;
+    z-index: 1;
+    bottom: 30px;
+}
+.menu_shop-h{
+    font-size: 30px;
+}
+.menu_shop-p{
+    top: 10px;
+}
+.menu_shop-pe{
+    background-color:aliceblue;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 40px;
+    padding: 0 10px;
+}
+.menu_shop-span{
+    color: #f5871f;
+    font-size: 30px;
+    display: flex;
+    font-weight: 600;
+    line-height: 1.3;
+    font-family: var(--thm-font);
+}
+.menu_shop-pe:hover{
+    border: 2px dashed #f5871f;
+
+}
+.menu_shop {
+    display: flex;
+    z-index: 1;
+    text-align: center;
+    justify-content: space-around;
+}
+@media only screen and (max-width: 1000px) and (min-width: 0){
+    .menu_shop{
+        display: block;
+        text-align: center;
+    }
+  }
+
+.menu_shop-1 {
+    display: block;
+    width: 500px;
+    justify-content: center;
+}
+.menu_shop-2 {
+    width: 500px;
+    display: block;
+    justify-content: center;
+
+} 
+.section-counter{
+    display: flex;
+    justify-content: space-around;
+    opacity: 1;
+    height: 200px;
+    align-items: center;
+    background-repeat: no-repeat;
+    margin-top: 50px;
+    background-position:left;
+    background-color: #333;
+}
+.section-counter-1{
+    color: #fff;
+    text-align: center;
+}
+.img-menu6{
+}
+/*---------Future end-----------*/
+/*---------Chef start----------*/
+.chef-title {
+    font-weight: 700;
+    font-size: 58px;
+    line-height: 1.2;
+    position: relative;
+}
+.chef_head{
+    text-align: center;
+    margin: 20px;
+}
+.chef-img{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+@media only screen and (max-width: 1000px) and (min-width: 0){
+    .chef-img{
+        display: block;
+    }
+  }
+
+.chef-subtitle {
+    font-size: 20px;
+    color: #f5871f;
+}
+.chef-img-1{
+    text-align: center;
+}
+.chef-img-1:hover{
+    opacity: 0.8;
+}
+.chef-img-text{
+}
+.consultant{
+    display: flex;
+    background-color: #555459;
+    padding: 100px;
+    justify-content: space-between;
+    line-height: 1.8;
+
+}
+@media only screen and (max-width: 1000px) and (min-width: 0){
+    .consultant{
+        display: block;
+    }
+  }
+.consultant-text{
+    color: #fff;
+    font-size: 40px;
+    align-items: center;
+}
+.consultant_block{
+    margin-top: 56px;
+}
+.consultant-block1{
+    width: 100px;
+    height: 50px;
+    background-color: #f5871f;
+    padding: 15px 15px;  
+    margin: 10px 10px;
+    border-bottom-right-radius: 20%;
+}
+.consultant-block2{
+    width: 100px;
+    height: 50px;
+    background-color: #fff;
+    padding: 15px 15px;  
+    margin: 10px 10px;
+    border-bottom-right-radius: 20%;
+
+}
+
+.consultant-block1:hover {
+    background-color: #ccc;
+}
+.consultant-block2:hover {
+    background-color: #ccc;
+}
+
+.consultant-sp{
+    color: #f5871f;
+}
+
+/*---------Chef end-------------*/
