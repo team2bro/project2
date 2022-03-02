@@ -846,7 +846,7 @@ p{
 .row{
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-evenly;
 }
 .gallary_content-item {
     display: flex;
@@ -857,7 +857,6 @@ p{
     overflow: hidden;
 }
 .gallary_img-item {
-    width: 636px;
     transition: all 0.5s;
     transition-delay: 0.1s;
 }
