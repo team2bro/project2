@@ -831,36 +831,25 @@ body{
     /* width: 80%; */
     margin: 0 auto;
 }
-/* h5{
-    font-size: 25px;
-    text-align: center;
-}
-p{
-    margin: 20px;
-} */
 
 .gallary-a-color{
     color: var(--base-color);
 
 }
-/* .row{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-} */
 .gallary_content-item {
-    display: flex;
+    
 }
 .gallary_content-item:first-child{
-    margin-left: 117px;
+    
 }
 .gallary-img{
-    position: relative;
+    /* position: relative; */
     overflow: hidden;
 }
 .gallary_img-item {
     transition: all 0.5s;
     transition-delay: 0.1s;
+    width: 100%;
 }
 .gallary_img-item:hover {
     cursor: pointer;
