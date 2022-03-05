@@ -35,3 +35,30 @@ foodBtns.forEach(function(el){
 		})
 	})
 })
+
+
+// count number 
+var ct = document.querySelector('.customer h1')
+var vt = document.querySelector('.variety h1')
+var aw = document.querySelector('.win h1')
+var pt = document.querySelector('.team h1')
+function count(el, to) {
+	let speed = 200
+    let from = 0
+	let step = to / speed
+    const counting = setInterval(function(){
+		from += step
+		if (from > to){
+			clearInterval(counting)
+			el.innerText = to
+		}
+		else {
+			el.innerText = Math.ceil(from)
+		}
+	}, 5)
+}
+
+count(ct, 30500)
+count(vt, 541)
+count(aw, 70)
+count(pt, 80)

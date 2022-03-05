@@ -843,7 +843,6 @@ body{
     
 }
 .gallary-img{
-    /* position: relative; */
     overflow: hidden;
 }
 .gallary_img-item {
@@ -880,7 +879,7 @@ body{
 }
 .feature_evaluate{
     border-bottom: 1px solid var(--border-food-menu);
-    margin: 0 120px;
+    margin: 0 135px;
 }
 .mb4{
     margin-bottom: 1.5rem !important;
@@ -931,9 +930,7 @@ h5.title-future{
     padding-right: 10px;
 }
 
-.col-lg-6-1{
-    width: 50%;
-}
+
 .progress{
     background-color: #f5871f;
     height: 5px;
@@ -955,6 +952,8 @@ h5.title-future{
 .title_block {
 
 }
+
+
   
 @keyframes example{
     from {width: 0;}
@@ -971,11 +970,12 @@ h5.title-future{
     width: 80%;
     margin: 0 auto;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
     line-height: 1.8;
 }
 .border_address-item {
-    width: 100%;
+    width: 30%;
     height: 100%;
     border: 1px solid var(--border-food-menu);
     border-radius: 25px;
@@ -1054,172 +1054,142 @@ h5.title-future{
     .border-address{
         display: block;
     }
-  }
-.menu_background{
-    float: right;
-    position: absolute;
-    right: 0;
-    background-position: center;
-    background-size: cover;
-    z-index: -1;
+}
+.counter{
 
 }
-.menu_head{
-    text-align: center;
-    z-index: 1;
-    bottom: 30px;
-}
-.menu_shop-h{
-    font-size: 30px;
-}
-.menu_shop-p{
-    top: 10px;
-}
-.menu_shop-pe{
-    background-color:aliceblue;
-    display: flex;
-    align-items: center;
-    text-align: center;
-    margin-bottom: 40px;
-    padding: 0 10px;
-}
-.menu_shop-span{
-    color: #f5871f;
-    font-size: 30px;
-    display: flex;
-    font-weight: 600;
-    line-height: 1.3;
-    font-family: var(--thm-font);
-}
-.menu_shop-pe:hover{
-    border: 2px dashed #f5871f;
-
-}
-.menu_shop {
-    display: flex;
-    z-index: 1;
-    text-align: center;
-    justify-content: space-around;
-}
-@media only screen and (max-width: 1000px) and (min-width: 0){
-    .menu_shop{
-        display: block;
-        text-align: center;
-    }
-  }
-
-.menu_shop-1 {
-    display: block;
-    width: 500px;
-    justify-content: center;
-}
-.menu_shop-2 {
-    width: 500px;
-    display: block;
-    justify-content: center;
-
-} 
 .section-counter{
     display: flex;
     justify-content: space-around;
-    opacity: 1;
-    height: 200px;
+    height: 300px;
     align-items: center;
-    background-repeat: no-repeat;
     margin-top: 50px;
     background-position:left;
-    background-color: #333;
+    background-image: url("../img/counter-bg.jpg");
+
 }
 .section-counter-1{
     color: #fff;
     text-align: center;
+    z-index: 1;
 }
-.img-menu6{
+.dark-overlay{
+    position: relative;
+    z-index: 1;
 }
+.dark-overlay:before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 100%;
+    z-index: -1;
+    background-color: rgba(0, 0, 0, .4);
+}
+
 /*---------Future end-----------*/
 /*---------Chef start----------*/
-.chef-title {
-    font-weight: 700;
-    font-size: 58px;
-    line-height: 1.2;
-    position: relative;
-}
-.chef_head{
-    text-align: center;
-    margin: 20px;
-}
-.chef-img{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-
-}
-@media only screen and (max-width: 1000px) and (min-width: 0){
-    .chef-img{
-        display: block;
-    }
-  }
-
-.chef-subtitle {
-    font-size: 20px;
-    color: #f5871f;
-}
-.chef-img-1{
-    text-align: center;
-}
-.chef-img-1:hover{
-    opacity: 0.8;
-}
-.chef-img-text{
-}
-.consultant{
-    display: flex;
-    background-color: #555459;
-    padding: 100px;
-    justify-content: space-between;
-    line-height: 1.8;
-
-}
-@media only screen and (max-width: 1000px) and (min-width: 0){
-    .consultant{
-        display: block;
-    }
-  }
-.consultant-text{
-    color: #fff;
-    font-size: 40px;
-    align-items: center;
-}
-.consultant_block{
-    margin-top: 56px;
-}
-.consultant-block1{
-    width: 100px;
-    height: 50px;
-    background-color: #f5871f;
-    padding: 15px 15px;  
-    margin: 10px 10px;
-    border-bottom-right-radius: 20%;
-}
-.consultant-block2{
-    width: 100px;
-    height: 50px;
+#chef_section{
+    padding-top: 150px;
     background-color: #fff;
-    padding: 15px 15px;  
-    margin: 10px 10px;
-    border-bottom-right-radius: 20%;
-
+    padding: 150px 10% 0;
+}
+.chef_title{
+    text-align: center;
+    font-size: 58px;
+    padding-bottom: 50px;
+}
+.chef_title h3 span:first-child{
+    color: var(--text-color);
+}
+.chef_title h3 span:nth-child(2){
+    color: var(--base-color);
 }
 
-.consultant-block1:hover {
-    background-color: #ccc;
-}
-.consultant-block2:hover {
-    background-color: #ccc;
-}
+.chef_member{
 
-.consultant-sp{
-    color: #f5871f;
 }
+.chef_member-item{
+    position: relative;
+    overflow: hidden;
+    align-items: center;
+}
+.chef_member-item img {
+    width: 100%;
+    transition: all 0.5s;
+}
+.chef_member-item:hover img {
+    transform: scale(1.1);
+}
+.chef_member-info{
+    position: absolute;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    padding: 30px;
+}
+.chef_info-title{
+    transform: translateY(-90px);
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.5s;
+}
+.chef_member-item:hover .chef_info-title{
+    transform: translateY(0);
+    visibility: visible;
+    opacity: 1;
 
+}
+.chef_info-title h5{
+    margin-bottom: 15px;
+}
+.chef_info-title h5 a{
+    font-size: 24px;
+    text-decoration: none;
+    color: #fff;
+    transition: all 0.5s;
+}
+.chef_info-title h5:hover a{
+    color: var(--base-hover);
+}
+.chef_info-title span a{
+    text-decoration: none;
+    transition: all 0.5s;
+    color: #fff;
+}
+.chef_info-title span:hover a{
+    color: var(--base-hover);
+}
+.chef_info-icon{
+    transform: translateY(70px);
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.5s;
+}
+.chef_member-item:hover .chef_info-icon{
+    transform: translateY(0);
+    visibility: visible;
+    opacity: 1;
+
+}
+.chef_info-icon span i{
+    text-align: center;
+    color: #fff;
+    padding: 15px;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background-color: var(--base-color);
+    margin: 5px;
+    transition: all 0.5s;
+}
+.chef_info-icon span:hover i{
+    cursor: pointer;
+    color: var(--text-color);
+    background-color: #fff;
+}
 /*---------Chef end-------------*/
