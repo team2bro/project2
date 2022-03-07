@@ -62,3 +62,6 @@ count(ct, 30500)
 count(vt, 541)
 count(aw, 70)
 count(pt, 80)
+
+
+// testimotial slider
