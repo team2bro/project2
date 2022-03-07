@@ -1348,10 +1348,9 @@ h5.title-future{
     outline: none;
 }
 .contact_form-text input{
-    padding: 0 20px 40px 20px;
+    padding: 20px 20px 129px 20px;
     margin-bottom: 20px;
     width: 100%;
-    height: 150px;
     outline: none;
 }
 .send_form{
@@ -1366,4 +1365,94 @@ h5.title-future{
 }
 .send_form:hover{
     background-color: var(--base-hover);
+}
+
+.hotel_address{
+    padding: 40px 20px;
+    border: solid 1px var(--border-food-menu);
+    border-radius: 15px;
+}
+.address_container{
+
+}
+.hotel_address{
+
+}
+.hotel_address i{
+    color: var(--base-color);
+    font-size: 30px;
+    margin-right: 20px;
+}
+.hotel_address-description{
+    display: inline-block;
+}
+.hotel_address-description p{
+    line-height: 1.6;
+    color: var(--text-color);
+}
+.hotel_address-title{
+    color: var(--text-color);
+    font-size: 24px;
+}
+/* footer */
+#footer{
+    height: 350px;
+    background-color: #222429;
+    text-align: center;
+}
+.footer_logo{
+    padding-top: 70px;
+}
+.subNav{
+    margin: 15px 0;
+}
+.subNav ul li{
+    display: inline-block;
+    margin: 0 15px;
+}
+.subNav ul li a{
+    color: #999b9f;
+    text-decoration: none;
+    transition: all 0.4s;
+}
+.subNav ul li:hover a{
+    color: #fff;
+    text-decoration: none;
+}
+.footer_social{
+}
+.footer_social ul li{
+    display: inline-block;
+    margin: 0 15px;
+    background-color: #1c1e22;
+    padding: 17px 18px;
+    border-radius: 50%;
+    transition: all 0.5s;
+    cursor: pointer;
+}
+.footer_social ul li:hover{
+    background-color: var(--base-color);
+    color: #fff;
+}
+.footer_social ul li a{
+    color: #999b9f;
+    transition: all 0.5s;
+}
+.footer_social ul li:hover a{
+    color: #fff;
+}
+
+.footer-copyright{
+    margin-top: 20px;
+}
+.footer-copyright span{
+    color: #999b9f;
+}
+.footer-copyright a{
+    color: #999b9f;
+    text-decoration: none;
+    transition: all 0.4s;
+}
+.footer-copyright a:hover{
+    color: #fff;
 }
