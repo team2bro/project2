@@ -426,8 +426,8 @@ body{
     margin-bottom: 0;
 }
 .about_img-item{
-    width: 668px;
-    height: 684px;
+    /* width: 668px;
+    height: 684px; */
 }
 .about_content{
     padding-left: 120px;
@@ -469,6 +469,7 @@ body{
 
 .about-recomment .customer-comment{
     margin-left: 40px;
+    position: relative;
 }
 .about-recomment .customer-comment p{
     color: var(--text-color);
@@ -484,7 +485,8 @@ body{
     position: absolute;
     font-size: 70px;
     opacity: 0.1;
-    transform: translate(380px, -95px);
+    right: 0;
+    bottom: 0;
 }
 
 
@@ -651,6 +653,7 @@ body{
     align-items: center;
     justify-content: center;
     display: flex;
+    flex-wrap: wrap;
 }
 
 .services_content {
